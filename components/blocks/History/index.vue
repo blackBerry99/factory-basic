@@ -1,20 +1,14 @@
 <script setup>
 const props = defineProps({content: Object})
-const events = props.content.events
+const history = props.content.history_items
 </script>
 
 <template>
-  <div v-for="event in events" :key="event.documentId">
-    <div v-if="event.sliderImage" >
-      {{event.name}}
-      {{event.shortDescription}}
-      {{event.formLink}}
-      {{event.date}}
-      {{event.location}}
-      {{event.time}}
-      {{event.createdAt}}
-      <NuxtImg :src="event.photo.url"/>
-    </div>
+  <div v-for="item in history" :key="item.documentId">
+      {{item.shortDescription}}
+      {{item.year.value}}
+      <!--      <NuxtImg :src="item.photo.url"/>-->
   </div>
 </template>
+
 

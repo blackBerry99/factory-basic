@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({content: Object})
-const events = props.content.events
+const partners = props.content.partners
 
 const containerRef = ref(null)
 const swiper = useSwiper(containerRef)
@@ -10,14 +10,10 @@ const swiper = useSwiper(containerRef)
       <ClientOnly>
         <swiper-container ref="containerRef">
           <swiper-slide
-              v-for="(event) in events"
-              :key="event.documentId"
-              style="background-color: rgb(32, 233, 70); color: white;"
+              v-for="(item) in partners"
+              :key="item.documentId"
           >
-            {{event.name}}
-            {{event.formLink}}
-            {{event.photo.url}}
-            <NuxtImg :src="event.sliderImage.url"/>
+            <NuxtImg :src="item.photo.url"/>
           </swiper-slide>
         </swiper-container>
       </ClientOnly>
