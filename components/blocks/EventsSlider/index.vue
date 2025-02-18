@@ -16,8 +16,8 @@ const swiper = useSwiper(containerRef)
           >
             {{event.name}}
             {{event.formLink}}
-            {{event.photo.url}}
-            <NuxtImg :src="event.sliderImage.url"/>
+<!--            {{event.photo.url}}-->
+<!--            <NuxtImg :src="event.sliderImage.url"/>-->
           </swiper-slide>
         </swiper-container>
       </ClientOnly>

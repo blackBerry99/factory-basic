@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-31',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/strapi', '@nuxt/image', 'nuxt-swiper'],
+  modules: ['@nuxtjs/strapi', '@nuxt/image', 'nuxt-swiper', '@nuxtjs/i18n'],
 
   strapi: {
     // Options
@@ -25,5 +25,10 @@ export default defineNuxtConfig({
       baseURL: process.env.STRAPI_URL || 'http://localhost:1337',
     },
     provider: 'strapi'
-  }
+  },
+
+  i18n: {
+    locales: ['en', 'uk'],
+    defaultLocale: 'uk',
+  },
 })

@@ -5,4 +5,5 @@
 <template>
   <header-section/>
     <slot />
+  <footer-section/>
 </template>

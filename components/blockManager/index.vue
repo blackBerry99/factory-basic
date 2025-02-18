@@ -20,7 +20,6 @@ const componentMapping = {
   // 'shared.media': () => import('~/components/shared/ImageSection.vue'),
 };
 
-
 </script>
 
 <style scoped>

@@ -7,7 +7,7 @@ const block = props.content
   <div>
     {{block.title}}
     {{block.description}}
-    <NuxtImg :src="block.image.url"/>
+<!--    <NuxtImg :src="block.image.url"/>-->
     dark- {{block.bgDark}}
   image first -   {{block.ImageFirst}}
   </div>

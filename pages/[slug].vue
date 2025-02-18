@@ -1,5 +1,4 @@
 <script setup>
-import qs from 'qs';
 
 const config = useRuntimeConfig()
 const route = useRoute();
