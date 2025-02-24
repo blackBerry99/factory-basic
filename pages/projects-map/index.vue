@@ -16,7 +16,6 @@ const projects = ref([]);
 const totalProjects = ref(0);
 const isLoading = ref(false);
 const { locale } = useI18n();
-console.log(locale)
 
 const limit = 1;
 const start = ref(0);

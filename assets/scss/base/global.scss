@@ -1,0 +1,26 @@
+@import "../base/_variables";
+
+.container {
+  width: 1280px;
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+}
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 1024px) {
+
+}

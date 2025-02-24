@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/strapi', '@nuxt/image', 'nuxt-swiper', '@nuxtjs/i18n'],
 
+  css: ['~/assets/scss/main.scss'],
+
   strapi: {
     // Options
   },
@@ -28,7 +30,26 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    locales: ['en', 'uk'],
+    locales: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'uk',
+        name: 'Ukrainian'
+      },
+    ],
     defaultLocale: 'uk',
   },
+
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: '@use "~/assets/scss/base/_variables.scss" as *;'
+  //       }
+  //     }
+  //   }
+  // }
 })
