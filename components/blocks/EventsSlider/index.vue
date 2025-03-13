@@ -12,7 +12,7 @@ const swiper = useSwiper(containerRef, {
   },
   pagination: {
     clickable: true,
-    dynamicBullets: true, // Optional: makes bullets dynamic
+    dynamicBullets: true,
   },
   creativeEffect: {
     prev: {
@@ -25,12 +25,12 @@ const swiper = useSwiper(containerRef, {
     },
   },
 })
-console.log(events)
+
 </script>
 
 <template>
       <ClientOnly>
-<div class="swiper">
+<div v-if="events && events.length > 0" class="swiper">
   <swiper-container ref="containerRef">
     <swiper-slide
         v-for="(event) in events"

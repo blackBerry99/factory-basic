@@ -1,14 +1,38 @@
-@import "../../base/_variables";
-
+//@import "../../base/_variables";
+@use "../../base/variables" as *;
 .btn {
   display: flex;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   align-items: center;
   justify-content: center;
   padding: 20px 25px;
+  transition: all 0.4s;
   &--primary {
     background: $primary;
     color: white;
+    &:hover {
+      background: $blue;
+    }
+  }
+
+  &--white {
+    background: white ;
+    color: $primary;
+    border: 3px solid $primary;
+    &:hover {
+      background: $primary;
+      color: white;
+    }
+    &.btn--active  {
+      background: $primary;
+      color: white;
+    }
+  }
+
+  &--lg {
+    padding: 20px 35px;
+    font-size: 24px;
+    border-radius: 16px;
   }
 }

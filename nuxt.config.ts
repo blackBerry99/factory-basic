@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-31',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/strapi', '@nuxt/image', 'nuxt-swiper', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/strapi', '@nuxt/image', 'nuxt-swiper', '@nuxtjs/i18n', '@pinia/nuxt', 'nuxt-easy-lightbox'],
 
   css: ['~/assets/scss/main.scss'],
 

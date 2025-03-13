@@ -7,8 +7,8 @@ const block = props.content
   <div class="text-block" :class="{'text-block--dark': block.bgDark}">
     <div class="container" :class="{'container--left': block.ImageFirst}">
       <div class="text-block__info">
-        <h2 class="text-block__title text-primary text-bold">    {{block.title}}</h2>
-        <p class="text-block__desc">    {{block.description}}</p>
+        <h2 v-if="block.title" class="text-block__title text-primary text-bold">    {{block.title}}</h2>
+        <p v-if="block.description" class="text-block__desc">    {{block.description}}</p>
       </div>
 
       <NuxtImg class="text-block__img" v-if="block.image.url" :src="block.image.url" :alt="block.image.name || 'image'"/>

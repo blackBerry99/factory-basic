@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({content: Object})
 const block = props.content
-console.log(block)
+
 </script>
 
 <template>
